@@ -31,7 +31,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 300px;
-  animation: glitch 45s infinite;
+  animation: glitch 10s infinite;
   display: flex;
   align-items: flex-end;
   padding: 2rem;
@@ -48,7 +48,7 @@ header h1 {
   font-size: 3rem;
   color: #00ffff;
   text-shadow: 2px 2px 10px #ff00ff;
-  animation: glitch 45s infinite;
+  animation: glitch 7s infinite;
   position: relative;
   margin: 0;
 }
