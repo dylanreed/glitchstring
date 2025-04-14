@@ -1,0 +1,10 @@
+<div class="header-content">
+    <h1><a href="{{ .Site.BaseURL }}" data-text="{{ .Site.Title }}">{{ .Site.Title }}</a></h1>
+    <nav>
+        <ul>
+            {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+</div>

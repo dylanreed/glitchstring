@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dylan.blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on dylan.blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Apr 2025 13:04:01 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Micropost</title>
+      <link>http://localhost:1313/posts/micropost/</link>
+      <pubDate>Mon, 14 Apr 2025 13:04:01 -0600</pubDate>
+      <guid>http://localhost:1313/posts/micropost/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Test Post 1</title>
+      <link>http://localhost:1313/posts/test-post-1/</link>
+      <pubDate>Mon, 14 Apr 2025 13:04:01 -0600</pubDate>
+      <guid>http://localhost:1313/posts/test-post-1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Test Post 2</title>
+      <link>http://localhost:1313/posts/test-post-2/</link>
+      <pubDate>Mon, 14 Apr 2025 13:04:01 -0600</pubDate>
+      <guid>http://localhost:1313/posts/test-post-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Creating Reactive Puppet Animations with Python</title>
+      <link>http://localhost:1313/posts/sample-post/</link>
+      <pubDate>Thu, 10 Apr 2025 14:32:21 -0400</pubDate>
+      <guid>http://localhost:1313/posts/sample-post/</guid>
+      <description>&lt;h1 id=&#34;creating-reactive-puppet-animations-with-python&#34;&gt;Creating Reactive Puppet Animations with Python&lt;/h1&gt;&#xA;&lt;p&gt;When I first started merging 1940s animation techniques with modern code, I didn&amp;rsquo;t expect to fall down a rabbit hole of viseme mapping and real-time audio reactivity. Yet here we are, with puppets that respond to speech patterns and emote based on frequency analysis.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-basic-puppet-framework&#34;&gt;The Basic Puppet Framework&lt;/h2&gt;&#xA;&lt;p&gt;The foundation of any good puppet system is a skeleton with proper hierarchical joints. In my framework, I use a simple structure:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

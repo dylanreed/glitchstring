@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animation | dylan.blog</title>
+<meta name="description" content="">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const title = document.querySelector('header h1');
+  if (title) {
+    title.setAttribute('data-text', title.innerText);
+    
+    
+    setInterval(function() {
+      if (Math.random() > 0.97) {
+        title.classList.add('glitching');
+        setTimeout(function() {
+          title.classList.remove('glitching');
+        }, 100 + Math.random() * 300);
+      }
+    }, 2000);
+  }
+});
+</script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+    <h1>dylan.blog</h1>
+    <nav>
+        <ul>
+            
+        </ul>
+    </nav>
+</div>
+
+    </header>
+    <main>
+        
+<div class="list-header">
+    <h1>Animation</h1>
+    
+</div>
+
+<div class="posts-list">
+    
+    <article class="post-card">
+        <h2><a href="http://localhost:1313/posts/sample-post/">Creating Reactive Puppet Animations with Python</a></h2>
+        <div class="post-meta">April 10, 2025</div>
+        <p><h1 id="creating-reactive-puppet-animations-with-python">Creating Reactive Puppet Animations with Python</h1>
+<p>When I first started merging 1940s animation techniques with modern code, I didn&rsquo;t expect to fall down a rabbit hole of viseme mapping and real-time audio reactivity. Yet here we are, with puppets that respond to speech patterns and emote based on frequency analysis.</p>
+<h2 id="the-basic-puppet-framework">The Basic Puppet Framework</h2>
+<p>The foundation of any good puppet system is a skeleton with proper hierarchical joints. In my framework, I use a simple structure:</p></p>
+        <a href="http://localhost:1313/posts/sample-post/" class="read-more">Read more →</a>
+    </article>
+    
+</div>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+    <p>&copy; 2025 dylan.blog | Built with <a href="https://gohugo.io/">Hugo</a> and hosted on <a href="https://micro.blog/">Micro.blog</a></p>
+    
+</div>
+
+    </footer>
+</body>
+</html>

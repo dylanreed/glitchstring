@@ -1,0 +1,38 @@
+{{ define "main" }}
+<article class="post h-entry">
+    <h1 class="p-name">{{ .Title }}</h1>
+    <div class="post-meta">
+        <span class="date">
+            <time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                {{ .Date.Format "January 2, 2006" }}
+            </time>
+        </span>
+        {{ with .Params.tags }}
+        <span class="tags p-category">
+            {{ range . }}
+            <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        </span>
+        {{ end }}
+    </div>
+    <div class="content e-content">
+        {{ .Content }}
+    </div>
+    
+    <div class="post-footer">
+        <a class="u-url" href="{{ .Permalink }}">Permalink</a>
+        {{ with .Site.Author.name }}
+        <span class="p-author h-card" style="display: none;">{{ . }}</span>
+        {{ end }}
+    </div>
+</article>
+
+{{ if .Site.Params.webmentions }}
+<section class="webmentions">
+    <h2>Responses</h2>
+    <div class="webmentions-container">
+        <!-- Micro.blog will populate this with webmentions -->
+    </div>
+</section>
+{{ end }}
+{{ end }}

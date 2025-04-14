@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+{{ if .Site.Params.favicon }}
+<link rel="icon" href="{{ .Site.Params.favicon | relURL }}" type="image/x-icon">
+{{ end }}
+
+<!-- Glitch effect enhancement -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Set data-text attribute for glitch effect
+  const title = document.querySelector('header h1');
+  if (title) {
+    title.setAttribute('data-text', title.innerText);
+    
+    // Random glitch effect
+    setInterval(function() {
+      if (Math.random() > 0.97) {
+        title.classList.add('glitching');
+        setTimeout(function() {
+          title.classList.remove('glitching');
+        }, 100 + Math.random() * 300);
+      }
+    }, 2000);
+  }
+});
+</script>

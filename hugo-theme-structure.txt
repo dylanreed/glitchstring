@@ -1,0 +1,26 @@
+# GlitchString Hugo Theme
+
+## Theme Structure
+```
+themes/glitchstring/
+├── archetypes/
+│   └── default.md
+├── layouts/
+│   ├── _default/
+│   │   ├── baseof.html
+│   │   ├── list.html
+│   │   └── single.html
+│   ├── index.html
+│   └── partials/
+│       ├── footer.html
+│       ├── head.html
+│       └── header.html
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── images/
+│       ├── avatar.png
+│       ├── banner.png
+│       └── r_background.png
+└── theme.toml
+```

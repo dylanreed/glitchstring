@@ -1,0 +1,12 @@
+name = "GlitchString"
+license = "MIT"
+licenselink = "https://github.com/yourusername/hugo-glitchstring/blob/master/LICENSE"
+description = "A cyberpunk theme for creative coders"
+homepage = "https://github.com/yourusername/hugo-glitchstring"
+tags = ["blog", "cyberpunk", "dark", "animation", "creative"]
+features = ["responsive", "glitch animation", "dark mode"]
+min_version = "0.41.0"
+
+[author]
+  name = "Dylan"
+  homepage = "https://dylan.blog"

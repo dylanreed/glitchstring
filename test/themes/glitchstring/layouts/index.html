@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="profile">
+    {{ if .Site.Params.avatar }}
+    <img src="{{ .Site.Params.avatar | relURL }}" alt="{{ .Site.Title }} avatar">
+    {{ end }}
+    <div class="bio">
+        {{ .Site.Params.bio | markdownify }}
+    </div>
+</div>
+
+<div class="sections">
+    {{ range .Site.Params.sections }}
+    <div class="card">
+        <h2>{{ .emoji }} {{ .title }}</h2>
+        <p>{{ .description }}</p>
+    </div>
+    {{ end }}
+</div>
+
+<div class="posts">
+    <h2>📝 Recent Posts</h2>
+    {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
+    <article class="post-card">
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <div class="post-meta">{{ .Date.Format "January 2, 2006" }}</div>
+        <p>{{ .Summary }}</p>
+        <a href="{{ .Permalink }}" class="read-more">Read more →</a>
+    </article>
+    {{ end }}
+</div>
+{{ end }}
